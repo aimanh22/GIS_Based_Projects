@@ -1,0 +1,132 @@
+/* ******** 1. Reset CSS ******** */
+*, *:before, *:after {  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary { display:block }
+audio, canvas, video { display:inline-block }
+audio:not([controls]) {display:none;height:0}
+html {-webkit-text-size-adjust: 100%;-ms-text-size-adjust:  100%;}
+a {text-decoration:underline;}
+a:focus {outline:thin dotted}
+a:hover,a:active {outline: 0;}
+a:hover {text-decoration:none;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;}
+b,strong,dt,th {font-weight: bold;}
+em, i { font-style:italic;}
+p,h1,h2,h3,h4,h5,h6, ul,ol,dd,table,fieldset,address {margin: 0 0 25px;}
+ul {padding:0 0 0 15px;}
+ol { padding:0 0 0 20px}
+ul ul,ol ol { margin:10px 0}
+img {-ms-interpolation-mode: bicubic;border: 0;vertical-align: middle; max-width:100%; height:auto;}
+figure {margin:0;}
+legend {white-space:normal;}
+q { quotes:"\201C" "\201D" "\2018" "\2019" }
+small { font-size:80% }
+sub, sup { font-size:75%; line-height:0; position:relative; vertical-align:baseline }
+sup { top:-0.5em }
+sub { bottom:-0.25em }
+table{border-collapse: separate;border-spacing: 0;width: 100%; empty-cells:show; border-left:1px solid #ddd;border-top:1px solid #ddd;}
+table table { margin:0}
+th,td {border:none; padding:8px 10px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+caption,th,td {font-weight: normal; background:#fff}
+th { font-weight:bold; background:#eee}
+/* ******** 2. Form fields ******** */
+button,input,select,textarea {font-size:1em;margin: 0;vertical-align: baseline; background-color:transparent; border:none;}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {cursor:pointer}
+[hidden], template {display:none}
+textarea {overflow:auto;vertical-align: top; resize:vertical;}
+input[type="checkbox"], input[type="radio"] {box-sizing:border-box;padding:0;margin:0 5px 0 0;}
+input[type="submit"], input[type="button"],input[type="reset"],button,.button{line-height:20px;padding:3px 10px;display:inline-block; text-decoration:none;}
+fieldset {border:0;margin:0;padding:0}
+label {padding-bottom:5px; display:block; font-weight:bold;}
+/* ******** 3. Clear floats ******** */
+.cf:before, .cf:after, .container:before, .container:after, .row:before, .row:after, ul:before, ul:after, .boxs:before, .boxs:after {content:" ";display:table}
+.cf:after, .container:after, .row:after, ul:after{clear:both}
+/* ******** 4. Common Classes ******** */
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:20px 0;padding:0}
+.alignLeft { float:left}
+.alignRight { float:right;}
+.displayNone, .hasJS noscript{display:none!important;visibility:hidden}
+/* ******** 5. Grid : 12 Coloum ******** */
+.example div div {border:1px solid #eee; margin-bottom:15px; padding-top:15px; padding-bottom:15px}
+.row { margin:0;}
+.cols1, .cols2, .cols3, .cols4, .cols5, .cols6, .cols7, .cols8, .cols9, .cols10, .cols11, .cols12 {float:left; padding-left:15px; padding-right:15px;}
+.cols12 {width:100%}
+.cols11 {width:91.66666667%}
+.cols10 {width:83.33333333%}
+.cols9 {width:75%}
+.cols8 {width:66.66666667%}
+.cols7 {width:58.33333333%}
+.cols6 {width:50%}
+.cols5 {width:41.66666667%}
+.cols4 {width:33.33333333%}
+.cols3 {width:25%}
+.cols2 {width:16.66666667%}
+.cols1 {width:8.33%}
+/******************************************************************************************************************/
+/*****************************************  11. Main CSS Theme Start ****************************************************************/
+/******************************************************************************************************************/
+/*Structure */
+.container { margin:0 auto; width:100%; max-width:1170px; padding:0 15px}
+/* CSS */
+body,button,input,select,textarea {color: #393939; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:1.5;}
+body {background-color:#fff;} 
+h1 {font-size: 2.308em;}
+h2 {font-size: 2.000em;}
+h3 {font-size: 1.692em;}
+h4 {font-size: 1.538em;}
+h5 {font-size: 1.385em;}
+h6 {font-size: 1.231em;}
+a {color:#0277a8;}
+a:hover {color:#393939;}
+.formGroup { margin-bottom:10px;}
+.formControl, select, textarea{border:1px solid #e5e5e5;width:100%; max-width:175px; height:30px; padding:3px 10px; font-size:100%; line-height:20px; display:block; background:#fff}
+button, html input[type="button"], input[type="reset"], input[type="submit"],input[type="file"],input {font-size:100%;}
+textarea.formControl { height:100px;}
+input[type="submit"], button,.button, a.button{color:#fff;border:1px solid #035f85;background-color:#0277a8;}
+input[type="submit"]:hover, .button:hover, button:hover, a.button:hover{color:#fff; background-color:#033d55; border-color:#012c3e}
+.inlineBox label, .inlineBox input { display:inline-block ; padding:0}
+
+#logo { margin:20px 0}
+#logo a { text-decoration:none}
+.help { float:right; padding:9px 0}
+#functionsa ul { list-style:none; margin:0; padding:0}
+#functionsa li { float:left; width:12.5%}
+#functionsa button {display:block; width:100%; padding:8px 0; font-size:15px;}
+
+.middleContent { padding:10px 0}
+#map{height:600px;min-width:1025px;border:none; }
+#displaymap { min-height:600px; border:1px dashed #ddd; margin:10px 0;}
+.noOfMaps { padding:10px; background-color:#eee; border:1px solid #ddd; margin-bottom:15px;}
+.noOfMaps label { line-height:30px;}
+.noOfMaps .formControl { max-width:50px;}
+.noOfMaps label, .noOfMaps .formControl, .noOfMaps .button{ float:left; margin-right:15px;}
+.mapBlockRow { margin:0 -1%}
+.mapBlockRow .button { margin:10px 0 10px 1%}
+.mapBlock { float:left; width:23%; margin:0 1% 10px; background:#f3f3f3}
+.mapBlock label { width:100px; font-size:13px;}
+.mapBlock select { width:130px;}
+.lableTitle { font-size:18px; padding-bottom:10px; color:#666}
+
+.olControlZoom.olControlNoSelect{display: none;}
+/*.mapsetCenterBlock{width: 600px; margin: 0 auto;}*/
+.labelfieldRow{padding-bottom: 10px;}
+
+.distdivOutput{}
+.distLayoutBox{float: left; width: 720px; margin-top: 10px; height: 70px; padding: 28px 15px 20px; background-color:#eee; border:1px solid #ddd; font-size: 14px; color: #000;}
+.distLayoutBox label{display:inline-block; width: 120px; padding:0px; font-size: 12px; color: #0277A8; text-transform: uppercase; font-weight: bold;}
+.distdivOutput #distdiv, .distdivOutput #areadiv{float: left; width: 330px; margin-left: 20px;}
+.distunitsBox{float:right; margin: 10px 0px 40px; padding: 20px 15px 15px; max-width: 330px; background-color:#eee; border:1px solid #ddd;}
+.distunitsBox label{float: left; width: 120px; padding: 8px 0px; font-size: 12px; color: #000;}
+.distunitsBox select{float: left; width: 180px;}
+.chooserRow{margin: 10px 0px 40px; padding: 20px 15px 15px;background-color:#eee; border:1px solid #ddd;}
+.chooserRow label{float: left; width: 120px; padding: 8px 0px; font-size: 12px; color: #000;}
+.chooserRow select{float: left; width: 180px;}
+.chooserRow input{float: left; width: 178px;padding: 3px; }
+.chooserRow input[type="button"],
+.noOfMaps input[type="button"]{color:#fff;border:1px solid #035f85;background-color:#0277a8; padding: 3px; color: #ffffff;}
+.chooserRow input[type="button"]:hover,
+.noOfMaps input[type="button"]:hover{color:#fff; background-color:#033d55; border-color:#012c3e}
+#createbufferdiv .noOfMaps{/*border: 1px solid #ddd; padding: 20px 15px 15px; background: #CCC;*/}
+.noOfMaps input[type="text"]{background: #fff; width: 178px;}
+.noOfMaps div{overflow: hidden; clear: both; margin-bottom: 5px; min-height:30px;}
+#create_buffer_inner #number_of_buffers{line-height: 29px; margin-right:15px;}

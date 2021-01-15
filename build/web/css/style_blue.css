@@ -1,0 +1,161 @@
+/* ******** 1. Reset CSS ******** */
+*, *:before, *:after {  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary { display:block }
+audio, canvas, video { display:inline-block }
+audio:not([controls]) {display:none;height:0}
+html {-webkit-text-size-adjust: 100%;-ms-text-size-adjust:  100%;}
+a {text-decoration:underline;}
+a:focus {outline:thin dotted}
+a:hover,a:active {outline: 0;}
+a:hover {text-decoration:none;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;}
+b,strong,dt,th {font-weight: bold;}
+em, i { font-style:italic;}
+p,h1,h2,h3,h4,h5,h6, ul,ol,dd,table,fieldset,address {margin: 0 0 25px;}
+ul {padding:0 0 0 15px;}
+ol { padding:0 0 0 20px}
+ul ul,ol ol { margin:10px 0}
+img {-ms-interpolation-mode: bicubic;border: 0;vertical-align: middle; max-width:100%; height:auto;}
+figure {margin:0;}
+legend {white-space:normal;}
+q { quotes:"\201C" "\201D" "\2018" "\2019" }
+small { font-size:80% }
+sub, sup { font-size:75%; line-height:0; position:relative; vertical-align:baseline }
+sup { top:-0.5em }
+sub { bottom:-0.25em }
+table{border-collapse: separate;border-spacing: 0;width: 100%; empty-cells:show; border-left:1px solid #ddd;border-top:1px solid #ddd;}
+table table { margin:0}
+th,td {border:none; padding:8px 10px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+caption,th,td {font-weight: normal; background:#fff}
+th { font-weight:bold; background:#eee}
+/* ******** 2. Form fields ******** */
+button,input,select,textarea {font-size:1em;margin: 0;vertical-align: baseline; background-color:transparent; border:none;}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {cursor:pointer}
+[hidden], template {display:none}
+textarea {overflow:auto;vertical-align: top; resize:vertical;}
+input[type="checkbox"], input[type="radio"] {box-sizing:border-box;padding:0;margin:0 5px 0 0;}
+input[type="submit"], input[type="button"],input[type="reset"],button,.button{line-height:20px;padding:3px 10px;display:inline-block; text-decoration:none;}
+fieldset {border:0;margin:0;padding:0}
+label {padding-bottom:5px; display:block; font-weight:bold;}
+/* ******** 3. Clear floats ******** */
+.cf:before, .cf:after, .container:before, .container:after, .row:before, .row:after, ul:before, ul:after, .boxs:before, .boxs:after {content:" ";display:table}
+.cf:after, .container:after, .row:after, ul:after{clear:both}
+/* ******** 4. Common Classes ******** */
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:20px 0;padding:0}
+.alignLeft { float:left}
+.alignRight { float:right;}
+.displayNone, .hasJS noscript{display:none!important;visibility:hidden}
+/* ******** 5. Grid : 12 Coloum ******** */
+.example div div {border:1px solid #eee; margin-bottom:15px; padding-top:15px; padding-bottom:15px}
+.row { margin:0;}
+.cols1, .cols2, .cols3, .cols4, .cols5, .cols6, .cols7, .cols8, .cols9, .cols10, .cols11, .cols12 {float:left; padding-left:15px; padding-right:15px;}
+.cols12 {width:100%}
+.cols11 {width:91.66666667%}
+.cols10 {width:83.33333333%}
+.cols9 {width:75%}
+.cols8 {width:66.66666667%}
+.cols7 {width:58.33333333%}
+.cols6 {width:50%}
+.cols5 {width:41.66666667%}
+.cols4 {width:33.33333333%}
+.cols3 {width:25%}
+.cols2 {width:16.66666667%}
+.cols1 {width:8.33%}
+/******************************************************************************************************************/
+/*****************************************  11. Main CSS Theme Start ****************************************************************/
+/******************************************************************************************************************/
+/*Structure */
+.container { margin:0 auto; width:100%; max-width:1170px; padding:0 15px}
+/* CSS */
+body,button,input,select,textarea {color: #393939; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:1.5;}
+body {background-color:#fff;} 
+h1 {font-size: 2.308em;}
+h2 {font-size: 2.000em;}
+h3 {font-size: 1.692em;}
+h4 {font-size: 1.538em;}
+h5 {font-size: 1.385em;}
+h6 {font-size: 1.231em;}
+a {color:#0277a8;}
+a:hover {color:#393939;}
+.formGroup { margin-bottom:10px;}
+.formControl, select, textarea{border:1px solid #e5e5e5;width:100%; max-width:175px; height:30px; padding:5px 10px; font-size:100%; line-height:20px; display:block; background:#fff}
+button, html input[type="button"], input[type="reset"], input[type="submit"],input[type="file"],input {font-size:100%;}
+textarea.formControl { height:100px;}
+input[type="submit"], button,.button, a.button{color:#fff;border:1px solid #035f85;background-color:#0277a8;}
+input[type="submit"]:hover, .button:hover, button:hover, a.button:hover{color:#fff; background-color:#033d55; border-color:#012c3e}
+.inlineBox label, .inlineBox input { display:inline-block ; padding:0}
+
+#logo { margin:20px 0}
+#logo a { text-decoration:none}
+.help { float:right; padding:19px 0}
+#functionsa ul { list-style:none; margin:0; padding:0}
+#functionsa li { float:left; width:12.5%}
+#functionsa button {display:block; width:100%; padding:8px 0; font-size:15px;}
+
+.middleContent { padding:10px 0}
+
+#displaymap { min-height:600px; border:1px dashed #ddd; margin:10px 0;}
+.noOfMaps { padding:10px; background-color:#eee; border:1px solid #ddd; margin-bottom:15px;}
+.noOfMaps label { line-height:30px;}
+.noOfMaps .formControl { max-width:50px;}
+.mapNameBlock .formControl { max-width:150px;}
+.noOfMaps label, .noOfMaps .formControl, .noOfMaps .button{ float:left; margin-right:15px;}
+.mapBlockRow, #map_names { margin:0 -1%}
+.mapBlockRow .button { margin:10px 0 10px 1%}
+.mapBlock, #map_names .mapNameBlock { float:left; width:31.33%; margin:0 1% 20px; background:#f3f3f3}
+.mapBlock label, #map_names .mapNameBlock label { width:130px; font-size:13px;}
+.mapBlock select, #map_names .mapNameBlock select, #map_names .mapNameBlock .formControl{ max-width:180px;}
+#map_names .mapNameBlock .mapNameLabel {width:130px;}
+#map_names .mapNameBlock .mapNameInput {max-width:100%;width:100%;}
+.lableTitle {clear:both; font-size:18px; padding-bottom:10px; color:#0277a8; padding: 15px 0 5px; margin-bottom: 10px; border-bottom: 1px solid #eee}
+
+.introPage{ text-align:center}
+.googleMapIntro { margin-bottom:25px;-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.43);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.43);
+box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.43); border:1px solid #ddd; padding:5px;}
+
+.slideBanner{position:relative;margin-top:10px;z-index:1; clear:both}
+.sliderwrapper{position:relative;overflow:hidden;width:58%;height:208px;float:right}
+.sliderwrapper .contentdiv{visibility:hidden;position:absolute;left:0;top:0;color:#979797;font-size:21px;line-height:30px;position:absolute;text-align:left;padding:0 5px 0 15px;background:#fff}
+.navigator-link{top:0;padding:0;margin:0;position:absolute;width:100%}
+.navigator-link a,.navigator-link a:hover,.navigator-link a.selected,.navigator-link .popup-tip,.navigator-link .popup-tip .popup-tip-top,.navigator-link .popup-tip .popup-tip-top .popup-tip-mid{background:url(../img/navigator-link-all-bg.png) no-repeat;transition-property:none;-moz-transition-property:none;-webkit-transition-property:none;-o-transition-property:none}
+.navigator-link a{position:absolute;height:26px;width:26px;cursor:pointer;overflow:hidden;text-indent:-1000px;background-position:0 0}
+.navigator-link .popup-tip{display:none;cursor:default;font-size:14px;color:#0b0b0b;padding:10px;position:absolute;left:-50px;top:-40px;z-index:999;width:100px;display:none;line-height:20px}
+.navigator-link a:hover,.navigator-link a.selected{background-position:-27px 0}
+.navigator-link a.f1{position:absolute;top:110px;left:25px}
+.navigator-link a.f2{position:absolute;top:0;left:21px}
+.navigator-link a.f3{position:absolute;top:0;left:155px}
+.navigator-link a.f4{position:absolute;top:45px;left:81px}
+.navigator-link a.f5{position:absolute;top:113px;left:170px}
+.navigator-link a.f6{position:absolute;top:88px;left:250px}
+.navigator-link a.f7{position:absolute;top:86px;left:342px}
+.navigator-link a.f8{position:absolute;top:3px;left:294px}
+.navigator-link a.f9{position:absolute;top:65px;left:232px}
+.navigator-link .pop1{top:75px;left:-20px}
+.navigator-link .pop2{top:-34px;left:-27px}
+.navigator-link .pop3{top:-35px;left:108px}
+.navigator-link .pop4{top:-10px;left:34px}
+.navigator-link .pop5{top:78px;left:121px}
+.navigator-link .pop6{top:54px;left:202px}
+.navigator-link .pop7{top:51px;left:295px}
+.navigator-link .pop8{top:-32px;left:245px}
+.navigator-link .pop9{top:16px;left:192px}
+.navigator-link .popup-tip{background-position:-53px 0;padding:3px 0 0;width:120px}
+.navigator-link .popup-tip .popup-tip-top{background-position:-293px bottom;padding:0 0 7px}
+.navigator-link .popup-tip .popup-tip-top .popup-tip-mid{background-position:-173px 0;background-repeat:repeat-y;padding:2px 6px;text-align:center}
+.welcomeTitle { border-bottom:2px solid #eee; padding-bottom:10px; margin-bottom:40px;}
+
+#map {width: 100%} 
+.mTop10{margin-top: 15px !important}
+.selcTbl li{float:left; margin:0 10px 10px; width:30.33%;}
+#databufferdiv{padding-bottom: 15px;}
+#data_buffer_inner label{float:left;}
+.mrgRight{margin-right: 15px;}
+div.tableData{margin-top: 15px;}
+.tableData th{ background-color: #ccc; color: #000; font-weight: bold; text-align: center;}
+.tableData td{text-align: center;}
+
+.noOfMaps .chooseData .fNone{float:none; font-weight: bold; font-size: 16px; border-bottom:1px solid #ccc; }
+.noOfMaps .chooseData .lblCheck{float:left; width:18%;}
+.lblAttri{float:left; margin-right:15px;}
